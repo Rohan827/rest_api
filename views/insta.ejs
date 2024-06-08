@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insta posts</title>
+</head>
+<body>
+    <h2>instagram posts</h2>
+
+    <% for(post of posts){%>
+        <div>
+            <h3>username :@<%=post.username%></h3>
+            <h4>tag :<%=post.tag%></h4>
+            <img height="100px" width="200px" src="<%=post.link%>" alt="image">
+        </div>
+        <% } %>
+        <br>
+        <br>
+        <a href="http://localhost:8080/insta/new">create new post</a>
+
+
+</body>
+</html>
