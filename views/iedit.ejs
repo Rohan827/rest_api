@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit post</title>
+</head>
+<body>
+    <h2>Edit your post</h2>
+    <p>Post id: <%= post.id%></p>
+    <p>post username : <%=post.username%></p>
+
+    <form method="post" action="/insta/<%=post.id%>?_method=PATCH">
+        <input placeholder="enter new tag" type="text" name="tag" id="">
+        <input type="text" placeholder="enter image link" name="link">
+    </form><br>
+    <button>submit</button>
+
+    
+
+</body>
+</html>

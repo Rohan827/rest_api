@@ -10,9 +10,13 @@
 
     <% for(post of posts){%>
         <div>
+            <h3>post id: <%= post.id%></h3>
             <h3>username :@<%=post.username%></h3>
             <h4>tag :<%=post.tag%></h4>
-            <img height="100px" width="200px" src="<%=post.link%>" alt="image">
+            <img height="100px" width="200px" src="<%=post.link%>" alt="image"><br>
+            <a href="http://localhost:8080/insta/<%=post.id%>">show post</a>
+            
+            <a href="http://localhost:8080/insta/<%=post.id%>/edit">edit post</a>
         </div>
         <% } %>
         <br>
